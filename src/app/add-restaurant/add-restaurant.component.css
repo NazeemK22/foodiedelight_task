@@ -1,0 +1,43 @@
+.container {
+  max-width: 800px; 
+  margin: auto;
+}
+
+mat-card {
+  padding: 20px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  border-radius: 8px;
+}
+
+mat-card-title {
+  text-align: center; 
+  font-size: 1.5rem; 
+  margin-bottom: 16px;
+}
+
+mat-card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px; 
+  margin-bottom: 16px; 
+}
+
+.form-field {
+  flex: 1; 
+}
+
+mat-form-field {
+  width: 100%;
+}
+
+button {
+  display: block;
+  margin: 16px auto; 
+}

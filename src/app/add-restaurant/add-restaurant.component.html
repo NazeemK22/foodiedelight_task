@@ -1,0 +1,47 @@
+<div class="container mt-3">
+  <mat-card>
+    <mat-card-title>Add a New Restaurant</mat-card-title>
+    <mat-card-content>
+      <form [formGroup]="restaurantForm" (ngSubmit)="onSubmit()">
+        <div class="form-row">
+          <mat-form-field appearance="fill" class="form-field">
+            <mat-label>Name</mat-label>
+            <input matInput formControlName="name" required>
+          </mat-form-field>
+          <mat-form-field appearance="fill" class="form-field">
+            <mat-label>Description</mat-label>
+            <textarea matInput formControlName="description" required></textarea>
+          </mat-form-field>
+        </div>
+        <div class="form-row">
+          <mat-form-field appearance="fill" class="form-field">
+            <mat-label>Location</mat-label>
+            <input matInput formControlName="location" required>
+          </mat-form-field>
+          <mat-form-field appearance="fill" class="form-field">
+            <mat-label>Contact</mat-label>
+            <input matInput formControlName="contact" required>
+          </mat-form-field>
+        </div>
+        <div class="form-row">
+          <mat-form-field appearance="fill" class="form-field">
+            <mat-label>Opening Hours</mat-label>
+            <input matInput formControlName="hours" required>
+          </mat-form-field>
+          <mat-form-field appearance="fill" class="form-field">
+            <mat-label>Cuisine Type</mat-label>
+            <input matInput formControlName="cuisine" required>
+          </mat-form-field>
+        </div>
+        <div class="mb-2">
+          <label for="image">Image: </label> &nbsp;
+          <input type="file" id="image" (change)="onFileSelected($event)">
+        </div>
+        <div *ngIf="selectedImage">
+          <img [src]="selectedImage" alt="Image preview" style="max-width: 15%; height: 15%;">
+        </div>
+        <button mat-raised-button color="primary" type="submit">Add Restaurant</button>
+      </form>
+    </mat-card-content>
+  </mat-card>
+</div>

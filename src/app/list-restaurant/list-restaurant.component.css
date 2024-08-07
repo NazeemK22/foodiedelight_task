@@ -1,0 +1,53 @@
+.container {
+  margin: auto;
+}
+
+.table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.table-title {
+  text-align: center; 
+  font-size: 1.5rem; 
+  margin-bottom: 16px; 
+}
+
+.search-filter {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 16px;
+  background-color: white;
+}
+
+.search-filter mat-form-field {
+  width: 100%;
+}
+
+table {
+  width: 100%;
+}
+
+th.mat-header-cell, td.mat-cell {
+  padding: 8px;
+}
+
+img {
+  max-height: 50px;
+}
+
+.paginator-container {
+  display: flex;
+  justify-content: flex-end; 
+  margin-top: 16px; 
+  width: 100%;
+}
+
+.mat-elevation-z8 {
+  box-shadow: none;
+}
+
+.mat-form-field{
+  width: 100%;
+}
